@@ -1,0 +1,354 @@
+﻿@charset "utf-8";
+/* CSS Document */
+/*reset s*/
+body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,form,fieldset,legend,button,input,textarea,th,td { margin: 0;padding: 0;}
+body,button,input,select,textarea {font: 12px/1.5 "Microsoft Sans serif", "MS Serif",Arial,"微软雅黑","Microsoft YaHei",sans-serif;outline:none;}
+a{color:inherit;}
+address,cite,dfn,em,i,var {font-style: normal}
+strong,b{font-weight:normal;}
+ul,ol {list-style: none}
+a {text-decoration: none}
+fieldset,img,button{border: 0}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}
+button,input,select,textarea {font-size:100%;}
+table{border-collapse: collapse;border-spacing:0;}
+/*reset e*/
+
+
+/*layout s*/
+body{color:#313131; background:#ffffff;}
+a{color:#313131;}
+a:hover{color:#b81c22;}
+.w{width:1180px;margin:0 auto;}
+.fl{float:left;}
+.fr{float:right}
+.clearfix{zoom:1;}
+.clearfix:after{display:block;clear:both;visibility:hidden;height:0;content:'';}
+.highlight{color:#b81c22;}
+.arrow{font-size:10px;color:#999999;}
+/*layout e*/
+
+/*top-lead s*/
+#top-lead{height:90px;}
+#top-lead .box1-wrap,#top-lead .box2-wrap,#top-lead .box3-wrap{width:1200px;height:100%;margin:0 auto;overflow:hidden;}
+#top-lead .box1-wrap a{float:left;width:100%;height:100%;}
+#top-lead .box2-wrap a{float:left;width:50%;height:100%;}
+#top-lead .box3-wrap a{float:left;width:400px;height:100%;}
+/*top-lead s*/
+
+/*site-nav s*/
+#site-nav{height:30px;border-bottom:1px solid #ececec;background-color:#f2f2f2;}
+#site-nav ul li{float:left;padding-right:20px;line-height:30px;color:#999;}
+#site-nav ul li a{color:#999;}
+#site-nav ul li .highlight{color:#b81c22;}
+#site-nav ul li a:hover{color:#b81c22;}
+#site-nav i{display:inline-block;width:12px;height:30px;padding-right:4px;vertical-align:middle;}
+#site-nav i.icon-home{width:15px;background:url(http://img1.zhongjiu.com.cn/indexImg/perm/icon_index.png) 0 6px no-repeat;}
+#site-nav i.icon-my{background:url(http://img1.zhongjiu.com.cn/indexImg/perm/icon_index.png) -80px 6px no-repeat;}
+#site-nav i.icon-goweb{background:url(http://img1.zhongjiu.com.cn/indexImg/perm/icon_index.png) -160px 6px no-repeat;}
+#site-nav i.icon-hlep{background:url(http://img1.zhongjiu.com.cn/indexImg/perm/icon_index.png) -240px 6px no-repeat;}
+#site-nav i.icon-call{background:url(http://img1.zhongjiu.com.cn/indexImg/perm/icon_index.png) -240px 6px no-repeat;}
+/*site-nav e*/
+
+/*header-cont s*/
+#header-cont{clear:both;height:104px;}
+#header-cont .logo{width:400px;background:url(http://img1.zhongjiu.com.cn/indexImg/perm/zj-logo.png) left center no-repeat;}
+#header-cont .logo a{display:inline-block;height:42px;line-height:21px;font-size:14px;padding:34px 0px 28px 209px;float:left;}
+#header-cont .logo .gif{
+	width:77px;
+	height:55px;
+	float:left;
+	margin:20px 0 0 0px;
+}
+#header-cont .logo .gif .a{
+	width:100%;
+	height:100%;
+	display:block;
+    cursor: pointer;
+    padding: 0;
+}
+#header-cont .search{width:500px;padding-top:28px;}
+.search_warp{border:3px solid #b81c22;height:32px;}
+.search_box{display:inline;z-index: 3;position:relative;float:left;height:32px;width:417px;}
+.search_input{color:#333;height:24px;*height:18px;line-height:24px;*line-height:18px;padding:4px;width:409px;border:none;display:inline}
+.search_btn{width:74px;height:32px;float:right}
+.search_btn input{font-size:16px;background-color:#b81c22;border:0;color:#fff;cursor:pointer;height:32px;text-align:center;width:74px;display:inline}
+/*自动补全*/
+.tt-hint{color:#777}
+.tt-dropdown-menu{display: none;border: 1px solid #b81c22;border-top: none; position: absolute;  top: 34px; left: -3px;right: auto; width: 422px;background: #fff; z-index: 1000;overflow: hidden;}
+.tt-suggestion{line-height:23px;cursor:pointer;overflow:hidden;color:#333;font-size:12px}
+.tt-suggestion > div{padding:1px 12px}
+.tt-suggestions .tt-cursor{background:#ffdfc6}
+.tt-suggestion .underline{border-bottom:1px solid #ddd;padding-left:24px}
+.tt-suggestion .s_pro{width:165px;float:left;white-space:nowrap;text-overflow:ellipsis;overflow:hidden}
+.tt-suggestion .s_num{text-align:right;white-space:nowrap;text-overflow:ellipsis;overflow:hidden}
+.tt-suggestion .s_pro strong{color:#f61a71;font-weight:normal}
+.tt-suggestion .s_num a{color:#666666}
+.tt-suggestion .s_num a:hover{color:#d10700}
+.left_nav{width:130px;height:160px;position:fixed;margin-right:560px;right:50%;bottom:300px;z-index:12;display:block;display:none}
+.left_navbg{width:130px;height:160px;background:url(/images/719.png) left top no-repeat;}
+
+#header-cont .search .hot-search{padding-top:7px;height:18px;overflow:hidden;}
+#header-cont .search .hot-search h2,#header-cont .search .hot-search a{float:left;color:#999;}
+#header-cont .search .hot-search a:hover{color:#b81c22;}
+#header-cont .search .hot-search a{float:left;margin:0 7px;}
+#header-cont .hot-search{padding-top:28px;padding-right:30px;}
+#header-cont .shopcar{z-index:3;position:relative;width:142px;height:38px;margin-top:28px;margin-right:30px;}
+#header-cont .shopcar dt{z-index:1;position:relative;width:140px;height:36px;border:1px solid #e6e3d3;line-height:36px;text-align:center;color:#666;}
+#header-cont .shopcar dd{display:none;position:absolute;top:42px;right:0px;width:273px;background-color:#fff;border:1px solid #e7e7e7;box-shadow: 0 0 2px rgba(0,0,0,.2);}
+#header-cont .shopcar:hover dt a{color:#b81c22;}
+#header-cont .shopcar:hover dt{height:40px;border-color:#e7e7e7;box-shadow: 0 0 2px rgba(0,0,0,.2);}
+#header-cont .shopcar:hover dt h3{position:absolute;left:0;top:0;width:140px;height:44px;background-color:#fff;}
+#header-cont .shopcar:hover dd{display:block;}
+#header-cont .shopcar i.icon-car{position:absolute;margin-top:9px;left:16px;*margin-top:auto;width:17px;height:17px;background:url(http://img1.zhongjiu.com.cn/indexImg/perm/icon_index.png) 0 -80px no-repeat;}
+#header-cont .shopcar .icon-count{position:absolute;margin-top:-3px;*margin-top:-15px;padding-left:5px;background:url(http://img1.zhongjiu.com.cn/indexImg/perm/icon_index.png) -80px -80px no-repeat;font-size:11px;color:#fff;}
+#header-cont .shopcar .icon-count i{display:inline-block;height:14px;line-height:14px;padding-right:6px;background:url(http://img1.zhongjiu.com.cn/indexImg/perm/icon_index.png) right -240px no-repeat;}
+#header-cont .shopcar i.arrow{position:absolute;margin-left:19px;margin-left:font-size:10px;}
+#header-cont .shopcar dd con{width:273px;overflow:hidden;}
+#header-cont .shopcar .nothing{padding-left:73px;height:61px;line-height:61px;color:#999;}
+#header-cont .shopcar .nothing i{position:absolute;top:0;width:44px;height:61px;margin-left:-52px;background:url(http://img1.zhongjiu.com.cn/indexImg/perm/icon_index.png) -160px -68px no-repeat;}
+#header-cont .shopcar .something{height:43px;margin:0 15px;line-height:43px;color:#666;font-weight:bold;}
+#header-cont .shopcar .goods-list{margin:0 0 0 15px;max-height:300px;overflow:auto;}
+#header-cont .shopcar .goods-list li{float:left;border-top:1px dashed #c6c6c6;padding:14px 0;}
+#header-cont .shopcar .goods-list li>p{float:left;}
+#header-cont .shopcar .goods-list li>p img{width:58px;height:58px;border:1px solid #e8e8e8;}
+#header-cont .shopcar .detail{float:left;margin-left:10px;width:160px;}
+#header-cont .shopcar .detail h5 a{color:#666;}
+#header-cont .shopcar .detail h5 a:hover{color:#b81c22;}
+#header-cont .shopcar .detail p{height:28px;line-height:28px;font-size:14px;color:#999}
+#header-cont .shopcar .detail .op{float:right;color:#2960bb;font-size:12px;cursor:pointer;}
+#header-cont .shopcar .detail .pr{color:#b81c22;}
+#header-cont .shopcar .detail>span a{font-size:13px;line-height:17px;color:#999;}
+#header-cont .shopcar .detail>span a:hover{color:#b81c22;}
+#header-cont .shopcar .sum{height:45px;margin:0 15px;line-height:45px;color:#666; text-align:right;}
+#header-cont .shopcar .sum .highlight{color:#b81c22;}
+#header-cont .shopcar .sum em{padding:0 0.5em;}
+#header-cont .shopcar .sum big{font-size:18px;}
+#header-cont .shopcar .go-acc{height:45px;}
+#header-cont .shopcar .go-acc a{float:right;height:28px;padding:0 10px;margin:0 15px;background:#b81c22;color:#fff;text-align:center;font-weight:bold;line-height:28px;border-radius:3px;-moz-border-radius: 3px;-webkit-border-radius: 3px;}
+
+/*header-cont e*/
+
+/*main-nav s*/
+#main-nav{height:40px;line-height:40px;border-bottom:2px solid #b81c22;}
+#main-nav .w{position:relative;z-index:2;}
+#category-nav{position:absolute;left:0px;width:200px;}
+#category-nav>dt,#category-nav>dd{}
+#category-nav h2{height:42px;line-height:42px;overflow:hidden;padding-left:57px;font-size:14px;color:#FFF;background-color:#b81c22;}
+#category-nav>div{display:none;height:60px;background-color:#313131;}
+#category-nav:hover>div{display:block;}
+#category-nav h3{position:relative;z-index:1;margin:0 7px;padding-left:50px;border-bottom:1px dashed #484848;line-height:59px;font-size:14px;color:#FFF;}
+#category-nav h3 a,#category-nav h3 a:hover{ color:#ffffff;}
+#category-nav h3 i{position:absolute;*top:-22px;width:20px;height:59px;margin-left:-35px;}
+#category-nav h3 .icon-bai{background:url(http://img1.zhongjiu.com.cn/indexImg/perm/icon_index.png) 0 -143px no-repeat;}
+#category-nav h3 .icon-hong{background:url(http://img1.zhongjiu.com.cn/indexImg/perm/icon_index.png) -80px -143px no-repeat;}
+#category-nav h3 .icon-yang{background:url(http://img1.zhongjiu.com.cn/indexImg/perm/icon_index.png) -160px -143px no-repeat;}
+#category-nav h3 .icon-pi{background:url(http://img1.zhongjiu.com.cn/indexImg/perm/icon_index.png) -240px -143px no-repeat;}
+#category-nav h3 .icon-li{background:url(http://img1.zhongjiu.com.cn/indexImg/perm/icon_index.png) -320px -143px no-repeat;}
+#category-nav h3 .icon-hun{background:url(http://img1.zhongjiu.com.cn/indexImg/perm/icon_index.png) -400px -143px no-repeat;}
+#category-nav h3 .icon-tri{display:none;right: -16px;top: 25px;*top:auto;margin-left:auto;border-color: transparent transparent transparent #b81c22;border-style: solid;
+border-width: 6px 0 6px 9px;width: 0;height: 0;font-size: 0;line-height: 0;_border-top-color: #fff;_border-bottom-color: #fff; _filter: chroma(color=white);}
+#category-nav .pop{display:none;/*display:block;*/position:absolute;top:42px;left:200px;width:740px;height:320px;overflow:hidden;padding:19px;border:1px solid #d7d7d7;background-color:#FFF;line-height:1;}
+#category-nav .pop dt{padding-bottom:15px;font-size:14px;color:#313131;font-weight:bold;}
+#category-nav .pop-trees{width:560px;}
+#category-nav .pop-trees dt{margin-right:22px;border-bottom:1px solid #313131;}
+#category-nav .pop-trees dd{padding:15px 0;}
+#category-nav .pop-trees ul{width:100%;overflow:hidden;}
+#category-nav .pop-trees ul li{float:left;width:100px;height:24px;line-height:24px;overflow:hidden;color:#313131;}
+#category-nav .pop-trees ul li:first-child{width:80px;}
+#category-nav .pop-trees ul li.lastChild{width:80px;}
+#category-nav .pop-trees a:hover{color:#b81c22;}
+#category-nav .pop-promotion{width:180px;}
+#category-nav .pop-promotion dd{width:100%;height:124px;overflow:hidden;margin-bottom:8px;}
+#category-nav .pop-promotion dd img{width:100%;height:100%;}
+#category-nav>div:hover{background-color:#b81c22;}
+#category-nav>div:hover .icon-tri{display:block;}
+#category-nav>div:hover .pop{display:block;}
+#category-nav>dd{}
+#top-nav{margin-left:200px;}
+#top-nav li{float:left;/*width:100px;*/ padding:0 20px;text-align:right;font-size:16px;font-weight:bold;color:#313131;}
+#top-nav li a{
+	position:relative;
+}
+#top-nav li a .hot{
+	background:url(http://pro.zhongjiu.cn/images/hot.png) no-repeat scroll center top;
+    display: block;
+    height: 17px;
+    position: absolute;
+    right: -15px;
+    top: -15px;
+    width: 29px;
+}
+#top-nav li>img{position:absolute;*margin-top:-10px;}
+#top-nav li.zheng-li{width:152px;}
+#top-nav li.zheng-li i{display:inline-block;width:17px;height:40px;margin-right:7px;vertical-align:middle;background:url(http://img1.zhongjiu.com.cn/indexImg/perm/icon_index.png) -320px 10px no-repeat;}
+/*main-nav e*/
+
+
+/*.footer s*/
+#footer{margin-top:20px;}
+#footer .ensure{height:184px;background-color:#f2f2f2;}
+#footer .ensure ul{padding-top:26px;}
+#footer .ensure li{float:left;width:180px;margin-left:20px;text-align:center;}
+#footer .ensure li:first-child{margin-left:0;}
+#footer .ensure i{display:inline-block;width:72px;height:72px;}
+#footer .ensure .icon-zpbz{background:url(http://img1.zhongjiu.com.cn/indexImg/perm/icon_index.png) 1px -321px no-repeat;}
+#footer .ensure .icon-lj{background:url(http://img1.zhongjiu.com.cn/indexImg/perm/icon_index.png) -80px -321px no-repeat;}
+#footer .ensure .icon-th{background:url(http://img1.zhongjiu.com.cn/indexImg/perm/icon_index.png) -160px -321px no-repeat;}
+#footer .ensure .icon-ps{background:url(http://img1.zhongjiu.com.cn/indexImg/perm/icon_index.png) -240px -321px no-repeat;}
+#footer .ensure .icon-kb{background:url(http://img1.zhongjiu.com.cn/indexImg/perm/icon_index.png) -320px -321px no-repeat;}
+#footer .ensure .icon-fw{background:url(http://img1.zhongjiu.com.cn/indexImg/perm/icon_index.png) -400px -321px no-repeat;}
+#footer .ensure h3{height:32px;line-height:32px;margin-top:10px;font-size:16px;font-weight:bold;}
+#footer .ensure p{height:21px;line-height:21px;font-size:13px;color:#666;}
+#footer .service{height:184px;margin-top:17px;}
+#footer .service dl{float:left;width:174px;}
+#footer .service dt{height:36px;line-height:36px;font-size:14px; font-weight:bold;}
+#footer .service dd{height:24px;line-height:24px;}
+#footer .service dd a{color:#666;}
+#footer .service dd a:hover{color:#b81c22;}
+#footer .service dl.web,#footer .service dl.weixin{width:100px;text-align:center;}
+#footer .service dl.web dd,#footer .service dl.weixin dd{padding-top:80px;}
+#footer .service dl.web dd{ background:url(http://img1.zhongjiu.com.cn/indexImg/perm/qr-p.jpg) center top no-repeat;}
+#footer .service dl.weixin dd{ background:url(http://img1.zhongjiu.com.cn/indexImg/perm/qr-w.jpg) center top no-repeat;}
+#footer .service dl.web{border-left:1px solid #d7d7d7;margin-left:2px;padding:0 42px 0 65px;}
+#footer .link{height:39px;line-height:39px;background-color:#313131; text-align:center;}
+#footer .link a{padding:0 14px;border-left:1px solid #fff;text-align:center;font-size:13px;color:#FFF;}
+#footer .link a:first-child{border-left:0 none;}
+#footer .copyright{height:110px;text-align:center;}
+#footer .copyright p{height:50px;line-height:50px;color:#666;}
+#footer .copyright div{width:625px;height:41px;margin:0 auto;padding:9px 0 22px; background:url(http://img1.zhongjiu.com.cn/indexImg/perm/authentication.png?12) center top no-repeat;}
+#footer .copyright div a{float:left;width:114px;height:100%;margin-left:13px;text-indent:-9999px;}
+#footer .copyright div a:first-child{margin-left:0;}
+/*.footer e*/
+
+/*#side-service s*/
+#side-service{z-index:4;position:fixed;top:0;right:-270px;width:270px;height:100%;border-left:4px solid #313131;background:#fff;} 
+#side-service .t{position:absolute;top:50%;right:270px;margin-top:-90px;}
+#side-service .t li{position:relative;width:44px;position:relative;height:36px;margin-bottom:2px;border-top-left-radius:5px;border-bottom-left-radius:5px;background:#313131;}
+#side-service .t li:hover{background:#b81c22;border-radius:0;}
+#side-service .t .sel{background:#b81c22;}
+#side-service .t li:hover a{display:block;}
+#side-service .t a{display:none;position:absolute;right:44px;width:45px;line-height:36px;padding-left:5px;border-top-left-radius:5px;border-bottom-left-radius:5px;text-align:center;color:#ffffff;background:#b81c22;}
+#side-service .t i{display:inline-block;width:44px;height:36px;background:url(http://img1.zhongjiu.com.cn/indexImg/perm/icon_index.png) no-repeat;cursor:pointer;}
+#side-service .t .sc>i{background-position:-152px -412px; }
+#side-service .t .cl i{background-position:-232px -412px; }
+#side-service .t .cp i{background-position:-312px -412px; }
+#side-service .t .ed i{background-position:-430px -413px; }
+#side-service .t .sc span{position:absolute;top:-8px;right:2px;height:16px;line-height:16px;padding-left:6px;color:#fff;background:url(http://img1.zhongjiu.com.cn/indexImg/perm/icon_index.png) -320px -480px no-repeat;}
+#side-service .t .sc span i{display:inline-block;width:auto;height:16px;padding-right:8px;color:#b81c22;background:url(http://img1.zhongjiu.com.cn/indexImg/perm/icon_index.png) right -480px no-repeat;}
+#side-service .c{position:relative;width:100%;height:100%;overflow:auto;background:#eaeaea;}
+#side-service .item{display:none;width:100%;overflow:hidden;/**width:250px;*/*position:relative;}
+#side-service .item-con{position:relative;width:270px;}
+#side-service .sel{display:block;}
+#side-service .c h3{z-index:1;position:absolute;top:0;width:270px;height:40px;line-height:40px;font-size:18px;color:#666;background:#f1f1f1;}
+#side-service .c h3 span{margin-left:55px;}
+#side-service .c h3 i{position:absolute;left:18px;top:0;height:40px;}
+#side-service .c h3 a{position:absolute;left:230px;top:0;width:20px;height:40px;background:url(http://img1.zhongjiu.com.cn/indexImg/perm/icon_index.png) -160px -469px no-repeat;}
+#side-service .no dt{ position:relative; z-index:10;height:38px;line-height:38px;overflow: hidden;padding:0 16px;border:1px solid #ffbdb2;border-width:1px 0;color:#444;background:#fff1f1;}
+#side-service .no{}
+#side-service .no dd{position:absolute;top:50%;left:0px;margin-top:-100px;width:100%;height:88px;padding-top:105px;font-size:14px;line-height:20px;color:#666;text-align:center;background:url(http://img1.zhongjiu.com.cn/comImg/car.png) 60px top no-repeat;}
+#side-service .no dd.no{position:absolute;top:50%;left:0px;margin-top:-100px;width:100%;height:88px;padding-top:105px;font-size:14px;line-height:20px;color:#666;text-align:center;background:none;}
+#side-service .no dd a{line-height:48px;color:#d30c13;}
+#side-service .go-login{float:right;height:24px;line-height:24px;padding:0 11px;margin-top:7px;border-radius:3px;color:#fff;background:#d30c13;}
+#side-service .item .no,#side-service .item .yes{padding:40px 0 110px;}
+#side-service .foot{position:fixed;bottom:0;width:270px;height:110px;background:#f1f1f1;}
+#side-service .foot ul{padding:8px 21px;}
+#side-service .foot li{float:left;/*min-width:114px;*/width:50%;height:20px;line-height:20px;font-size:13px;color:#444;}
+#side-service .foot b{color:#e40c14;}
+#side-service .foot a{display:block;width:230px;height:38px;margin:0 auto;line-height:38px;border-radius:3px;font-size:14px;color:#fff;text-align:center;background:#e40c14;}
+/*sc-c*/
+/*#side-service .sc-c{background:#f1f1f1;}*/
+#side-service .sc-c h3 i{width:25px;background:url(http://img1.zhongjiu.com.cn/indexImg/perm/icon_index.png) -240px -471px no-repeat;}
+#side-service .sc-c .yes dl{padding:0 16px;background:#fff;}
+#side-service .sc-c .yes dt{line-height:39px;border-top:1px solid #e4e4e4;font-size:13px;color:#777;}
+#side-service .sc-c .yes dt:first-child{border-top:none;border-bottom:1px solid #e4e4e4;}
+#side-service .sc-c .yes dt span{float:left;line-height:20px;margin-top:9px;margin-left:-1px;padding-left:9px;background:url(http://img1.zhongjiu.com.cn/indexImg/perm/icon_index.png) -320px -560px no-repeat;}
+#side-service .sc-c .yes dt .icon-zp{display:block;width:50px;height:38px;background-position: -80px -470px;}
+#side-service .sc-c .yes dt p{margin-bottom:12px;line-height:20px;font-size:12px;}
+#side-service .sc-c .yes dl{margin-bottom:10px;}
+#side-service .sc-c .yes dl b{color:#e40c14;}
+#side-service .sc-c .yes dt i{display:inline-block;padding-right:10px;color:#fff;background:url(http://img1.zhongjiu.com.cn/indexImg/perm/icon_index.png) right -560px no-repeat;}
+#side-service .sc-c .yes dd{padding:15px 0 13px;border-top:1px dotted #999;}
+#side-service .sc-c .yes dd:first-of-type{border-top:none;}
+#side-service .sc-c .yes dd img{float:left;width:48px;height:48px;border:1px solid #cecece;margin-right:10px;}
+#side-service .sc-c .yes h6{height:32px; overflow:hidden;}
+#side-service .sc-c .yes h6 a{line-height:16px;font-size:14px;color:#444;}
+#side-service .sc-c .yes p{color:#444;}
+#side-service .sc-c .yes p em{font-size:14px;}
+#side-service .sc-c .yes .notice{padding:3px;border:1px solid #ffc0b6;border-radius:3px;margin-top:3px;color:#ff4559;background-color:#fff1f1;}
+#side-service .sc-c .yes .op-del{float:right;font-size:13px;color:#3d62bf;}
+/*cl-c*/
+/*#side-service .cl-c{background-color:#eaeaea;}*/
+/*#side-service .cl-c .yes{overflow:hidden;}*/
+#side-service .cl-c .yes ul{padding-left:11px;/*width:259px;*/}
+#side-service .cl-c .yes li{position:relative;float:left;width:120px;height:144px;margin:0 7px 7px 0; text-align:center;background:#fff;}
+#side-service .cl-c .pin{display:block;width:100%;height:100%;font-size:14px;color:#e40c14;line-height:30px;}
+#side-service .cl-c .pin img{width:80%;margin:10px 0 5px;}
+#side-service .cl-c .go-into{display:none;position:absolute;left:0;bottom:33px;width:100%;height:26px;line-height:26px;font-size:13px;color:#fff;background:rgba(44,44,44,.8);filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#CC444444,endColorstr=#CC444444);}
+#side-service .cl-c .go-into:hover{background:rgba(211,12,19,.9);filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#E6D30C13,endColorstr=#E6D30C13);}
+#side-service .cl-c .op-del{display:none;position:absolute;right:0;top:0;width:30px;height:30px;background:url(http://img1.zhongjiu.com.cn/indexImg/perm/icon_index.png) -72px -555px no-repeat;}
+#side-service .cl-c .yes li:hover .go-into{display:block;}
+#side-service .cl-c .yes li:hover .op-del{display:block;}
+#side-service .cl-c h3 i{width:30px;background:url(http://img1.zhongjiu.com.cn/indexImg/perm/icon_index.png) 0 -550px no-repeat;}
+/*cp-c*/
+/*#side-service .cp-c{background:#f1f1f1;}*/
+/*#side-service .cp-c .yes{overflow:hidden;}*/
+#side-service .cp-c{}
+#side-service .cp-c h3 i{width:30px;background:url(http://img1.zhongjiu.com.cn/indexImg/perm/icon_index.png) -240px -550px no-repeat;}
+#side-service .cp-c .yes dl{/*width:240px;*/height:70px;margin:15px;padding:15px 0;background:url(http://img1.zhongjiu.com.cn/comImg/bg-coupon.jpg) center center repeat-x;}
+#side-service .cp-c .yes dd{font-family:"宋体";color:#999;line-height:23px;}
+#side-service .cp-c .yes dt{position:relative;float:left;width:109px;height:70px;border-right:1px dashed #d4d4d4;margin-right:15px;line-height:50px;font-size:18px;color:#ffa145; text-align:center;}
+#side-service .cp-c .yes dt b{font-size:30px;}
+#side-service .cp-c .yes dt i{position:absolute;left:0;bottom:10px;width:109px;line-height:20px;font-size:12px;font-family:"宋体";color:#999;}
+#side-service .cp-c .lt50 dt{color:#ff5b1a;}
+#side-service .cp-c .lt100 dt{color:#ea6789;}
+#side-service .cp-c .lt150 dt{color:#82bcf2;}
+#side-service .cp-c .lt200 dt{color:#ec3a4f;}
+#side-service .cp-c .djs dd{ text-align:right;}
+#side-service .cp-c .yes dd p{line-height:46px;padding-right:6px;font-size:14px;color:#fff;text-align:right;background:url(http://img1.zhongjiu.com.cn/indexImg/perm/icon_index.png) right -635px no-repeat;}
+#side-service .cp-c .yes>a,#side-service .cl-c .yes>a{position:relative;display:block;margin-top:20px;font-size:14px;color:#999;line-height:20px; text-align:center;}
+#side-service .cp-c .yes>a i,#side-service .cl-c .yes>a i{position:absolute;top:0;margin-left:10px;width:20px;height:20px;background:url(http://img1.zhongjiu.com.cn/indexImg/perm/icon_index.png) 0 -480px no-repeat;}
+/*#side-service e*/
+*{
+				margin:0;
+				padding:0;
+			}
+			.footer{
+				background:#ffffff;
+				height:68px;
+				color:#7c7c7c;
+				text-align:center;
+				padding-top:15px;
+				font-size:14px;
+				line-height:28px;
+			}
+.weibo-img{
+display: inline-block; 
+vertical-align: middle; 
+position:relative;
+cursor:pointer;
+}
+.weixin-img{
+display: inline-block; 
+vertical-align: middle; 
+position:relative;
+cursor:pointer;
+}
+.weibo{
+position: absolute; 
+z-index: 1000; 
+width: 150px;
+height: 150px; 
+top: 30px; 
+left: -50px;
+display:none; 
+}
+.weixina{
+position: absolute; 
+z-index: 1000; 
+width: 150px;
+height: 150px; 
+top: 20px; 
+left: -50px;
+display:none; 
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>cookie</title>
+</head>
+<body>
+	<div>
+		<span id="goodId1">商品一</span>
+		<span>1RMB</span>
+		<a class="addToCar" href="##">加入购物车</a>
+	</div>
+	<div>
+		<span id="goodId2">商品二</span>
+		<span>2RMB</span>
+		<a class="addToCar" href="##">加入购物车</a>
+	</div>
+	<div>
+		<span id="goodId3">商品三</span>
+		<span>3RMB</span>
+		<a class="addToCar" href="##">加入购物车</a>
+	</div>
+	<button id='jieSuan'>结算</button>
+	<button id='clearCarts'>清除</button> 
+	
+	<script src="js/jquery-1.12.3.js"></script>
+	<script src="js/jquery.cookie.js"></script>
+	<script>
+		$(".addToCar").click(function() {
+			// alert(123)
+			var span = $(this).siblings();
+			var goodId = $(span[0]).attr("id");
+			var goodName = $(span[0]).text()
+			var goodPrice = $(span[1]).text();
+			//购物车没有这件商品
+			var goods = $.cookie("carts") ? JSON.parse($.cookie("carts")) : {};
+			// console.log(goods);
+			if(goodId in goods) {
+				goods[goodId].num++
+			} else {
+				goods[goodId] = {
+					"id": goodId,
+					"name": goodName,
+					"price": goodPrice,
+					"num": 1
+				}
+				// console.log(goods);
+			}
+			//注意：cookie格式的 需要转化为字符串形式的json对象
+
+			//			购物车格式
+   //$.cookie("carts", "{'goodId': 1, 'goodName': '女装一', 'goodPrice': '180rmb', 'goodImg': '../img/1.jpg'}", {expires: 7, path: "/"});
+
+			$.cookie("carts", JSON.stringify(goods), {expires: 7, path: "/"});
+			 console.log($.cookie("carts"))
+		})
+		$("#jieSuan").click(function() {
+			location.href = "buy.html";
+		})
+	</script>
+</body>
+</html>

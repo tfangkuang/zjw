@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/login.css">
+    <body>
+    <!-- 注册页面上部分 -->
+        <div class="load_top">
+		    <ul class="top_l">
+				<li class="top_l1"><a href="http://www.zhongjiu.cn"></a></li>
+				<li class="top_l2">登录</li>
+			</ul>
+			<ul class="top_r">
+				<li class="top_r1">100%正品</li>
+				<li class="top_r2">一时达</li>
+				<li class="top_r3">金牌客服</li>
+			</ul>
+		    <div class="clear"></div>
+		</div>
+	<!-- 注册页面上部分 -->
+
+	<!-- 注册页面注册部分 -->
+	    <div class="load_con">
+	    	<div class="load_con_l_reg" style="background:url(../images/0223xinrenzhuce.jpg)"></div>
+	    	<div class="load_con_r">
+	    		<div class="r_con">
+	    			<div class="cell"><label for="userId" id="userId_MoRen">请输入手机号</label>
+						<input id="userId" type="text" class="text error" />
+						<span id="userId_ok" class="ok" style="display:none"></span> <div class="cell_hid" style="display: none;" id="userId_error">
+						<span class="sanj"></span><span id="userId_error_content">您输入的账户名不存在，请核对后重新输入</span>
+						</div>
+				    </div>
+                    <div class="cell">
+						<label class="" for="passWord" id="passWord_MoRen">请输入密码</label>
+						<input id="passWord" type="password" class="text error" >
+						<span id="passWord_ok" class="ok" style="display:none"></span>
+						<div class="cell_hid" style="display: none;" id="passWord_error">
+						<span class="sanj"></span><span id="passWord_error_content">密码必须在6-16个字符之间,请确认密码是否正确</span>
+						</div>
+					</div>
+					<div class="r_rem"><span class="r_rem1 tj" id="remberUserId">记住用户名</span>
+					   <a class="r_rem2" href="#">忘记密码？</a>
+                    </div>
+                    <div class="r_load">
+						<input type="submit" class="r_load_btn" value="登录">
+						<a href="register.html" class="r_load_zc">30秒注册»</a>
+					</div>
+                    
+
+
+	    		</div>
+	    	</div>
+	    	<div class="clear"></div>
+	    </div>
+	<!-- 注册页面注册部分 -->
+
+	<div class="load_foot">
+		<p>
+		Copyright © 2016 中酒网(www.zhongjiu.cn) 版权所有
+		<a target="_blank" href="http://www.miibeian.gov.cn">京ICP备12022216号-2</a>
+		</p>
+		<p><i class="red">购买前请确认达到法定饮酒年龄！</i>中酒网不销售任何含酒精产品给18岁以下人士！</p>
+	</div>
+	<script src="../lib/jquery-1.12.3.js "></script>
+	<script src="../lib/jquery.cookie.js"></script>
+	<script src="../js/login.js"></script>
+	
+    </body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<script type="text/javascript" src="js/jquery-1.12.3.js" ></script>
+		<script src="js/jquery.cookie.js" type="text/javascript" charset="utf-8"></script>
+		<style>
+		</style>
+	</head>
+	<body>
+		 <div>
+			<span id="goodId1">商品一</span>
+			<span>1RMB</span>
+			<a class="addToCar" href="##">加入购物车</a>
+		</div>
+		<div>
+			<span id="goodId2">商品二</span>
+			<span>2RMB</span>
+			<a class="addToCar" href="##">加入购物车</a>
+		</div>
+		<div>
+			<span id="goodId3">商品三</span>
+			<span>3RMB</span>
+			<a class="addToCar" href="##">加入购物车</a>
+		</div>
+		<button id='jieSuan'>结算</button>
+		<button id='clearCarts'>清除</button> 
+
+		<script type="text/javascript">
+			// 获取
+			//$.cookie(key)读取cookie名为key的值
+			// 增加、修改、删除
+			//$.cookie(key, val, {expires: 过期时间, path: "路径一般为/"})
+			
+//			增加（中文自动编码）
+//			$.cookie("userName", "zhangsan", {expires: 7, path: "/"});
+//			$.cookie("userName", "张三", {expires: 7, path: "/"});
+            // $.cookie("userName","zhangsan",{expires: 7,path: "/"});
+
+//		var userInfo = {};
+//		userInfo.userName = "zhangsan";
+//		userInfo.email = "zhangsan@13.com";
+//		$.cookie("userInfo", JSON.stringify(userInfo), {expires: 7, path: "/"});
+
+//		var goods = {};
+//		var g3 = "g3"
+//		goods[g3] = {
+//			id: "3",
+//			price: "159rmb",
+//			num: "5"
+//		}
+//		goods["g1"] = {
+//			id: "1",
+//			price: "159rmb",
+//			num: "3"
+//		}
+//		$.cookie("carts", JSON.stringify(goods), {expires: 7, path: "/"})
+
+//			获取
+//			console.log($.cookie("userName"))
+
+//			修改（key值相同）
+//			$.cookie("userName", "lisi", {expires: 7, path: "/"});
+
+//			删除
+//			$.cookie("userName", "", {expires: -1, path: "/"});
+
+//			json格式存储value值
+//			$.cookie("userInfo", "{userName: 'zhangsan', email: '22223@qq.com'}", {expires: 4, path: '/'})
+//			console.log($.cookie("userInfo"))
+//			var jsonTmp = {};
+//			jsonTmp.userName = "lisis";
+//			jsonTmp.email = "22223@qq.com";
+//			$.cookie("userInfo", JSON.stringify(jsonTmp), {expires: 7, path: "/"});
+//			console.log(JSON.parse($.cookie("userInfo")).userName)
+
+			// JSON.parse("字符串")将json格式字符串转为json
+			// JSON.stringfy(json)将json转为json字符串
+			
+//			购物车格式
+//			$.cookie("carts", "{'goodId': 1, 'goodName': '女装一', 'goodPrice': '180rmb', 'goodImg': '../img/1.jpg'}", {expires: 7, path: "/"});
+
+			//添加到购物车
+			$('.addToCar').click(function(){
+				var spans = $(this).siblings();
+				// console.log(spans)
+				var goodId = $(spans[0]).attr('id');
+				// console.log(goodId);
+				var goodName =  $(spans[0]).text();
+				// console.log(goodName);
+				var goodPrice = $(spans[1]).text();
+				//判断购物车是否有商品
+				var goods = $.cookie('carts') ? JSON.parse($.cookie('carts')) : {};
+				// console.log(goods);
+				if(goodId in goods){
+					goods[goodId].num++;
+				} else {
+					goods[goodId] = {
+						id : goodId,
+						name : goodName,
+						price : goodPrice,
+						num : 1
+					}
+				}
+				$.cookie("carts", JSON.stringify(goods), {expires:7,path:'/'});
+				console.log($.cookie("carts"))
+				
+	
+			});
+//			//结算
+			$('#jieSuan').click(function(){
+				location.href = "buy.html";
+			})
+//			// 删除
+			$("#clearCarts").click(function() {
+				$.cookie("carts", "", {expires: -1, path: '/'});
+			});		
+		</script>
+	</body>
+</html>

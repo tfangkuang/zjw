@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<script>
+		
+		  	// 获取
+			//$.cookie(key)读取cookie名为key的值
+			// 增加、修改、删除
+			//$.cookie(key, val, {expires: 过期时间, path: "路径一般为/"})
+			
+//			增加（中文自动编码）
+//			$.cookie("userName", "zhangsan", {expires: 7, path: "/"});
+//			$.cookie("userName", "张三", {expires: 7, path: "/"});
+
+//			获取
+//			console.log($.cookie("userName"))
+
+//			修改（key值相同）
+//			$.cookie("userName", "lisi", {expires: 7, path: "/"});
+
+//			删除
+//			$.cookie("userName", "", {expires: -1, path: "/"});
+
+//			json格式存储value值
+//			$.cookie("userInfo", "{userName: 'zhangsan', email: '22223@qq.com'}", {expires: 4, path: '/'})
+//			console.log($.cookie("userInfo"))
+//			var jsonTmp = {};
+//			jsonTmp.userName = "lisis";
+//			jsonTmp.email = "22223@qq.com";
+//			$.cookie("userInfo", JSON.stringify(jsonTmp), {expires: 7, path: "/"});
+//			console.log(JSON.parse($.cookie("userInfo")).userName)
+
+			// JSON.parse("字符串")将json格式字符串转为json
+			// JSON.stringfy(json)将json转为json字符串
+
+		</script>
+	</head>
+	<body>
+		<script type="text/javascript" src="js/jquery-1.12.3.js" ></script>
+		<script type="text/javascript" src="js/jquery.cookie.js" ></script>
+		<script>
+		
+//		  $.cookie("uesrName","zhangshan",{expires: 7,path: "/"});  //增加功能
+//		  $.cookie("uesrName","lisi",{expires: 7 ,path:"/"}); //替代功能
+		  $.cookie("uesrName","lisi",{expires: -1,padth: "/"})
+//		  console.log($.cookie("uesrName"))  //获取
+//        $.cookie("uesrName","张三",{expires: 7,path: "/"});  //增加功能（中文就乱码了）
+          
+          
+          // JSON.parse("字符串")将json格式字符串转为json
+		 // JSON.stringfy(json)将json转为json字符串
+          var jsonTep = {};
+          jsonTep.userName = "lisi"
+          jsonTep.email = "888@qq.com"
+          $.cookie("Info",JSON.stringify(jsonTep),{expires: 7,path:"/"});//经过转化 已经为string
+//        console.log(($.cookie("Info")))
+//        console.log(JSON.parse($.cookie("Info")).email)  //要获取value值，必须为{}格式
+
+
+		  
+		  
+		  
+		</script>
+		
+	</body>
+</html>

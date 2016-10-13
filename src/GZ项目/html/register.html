@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/register.css">
+    <link rel="stylesheet" href="../css/jquery.idcode.css">
+    <body>
+    <!-- 注册页面上部分 -->
+        <div class="load_top">
+		    <ul class="top_l">
+				<li class="top_l1"><a href="http://www.zhongjiu.cn"></a></li>
+				<li class="top_l2">登录</li>
+			</ul>
+			<ul class="top_r">
+				<li class="top_r1">100%正品</li>
+				<li class="top_r2">一时达</li>
+				<li class="top_r3">金牌客服</li>
+			</ul>
+		    <div class="clear"></div>
+		</div>
+	<!-- 注册页面上部分 -->
+
+	<!-- 注册页面注册部分 -->
+	    <div class="load_con">
+	    	<div class="load_con_l_reg" style="background:url(../images/0223xinrenzhuce.jpg)"></div>
+	    	<div class="load_con_r">
+	    		<div class="r_con re_back">
+	    			<p class="re_back_link">我已经注册，马上<a href="#">登录»</a></p>
+	    			<div class="cell">
+						<label class="" for="userId" id="userId_moren">请输入手机号</label>
+						<input id="userId" type="text" class="text error lighth" />
+						<span class="ok" id="userId_ok" style="display:none"></span>
+						<div class="cell_hid" id="userId_error" style="display: none;">
+					    <span class="sanj"></span><span id="userId_error_content">请输入正确的手机号</span>
+						</div>
+					</div>
+
+					<div class="cell vcode" id="userId_email">
+						<label class="" for="yanZhengCode_email" id="yanZhengCode_email_moren">请输入验证码</label>
+						<input type="text" class="text error" id="yanZhengCode_email" />
+						<span class="ok" style="display:none" id="yanZhengCode_email_ok"></span>
+						<div class="cell_hid" style="display: none;" id="yanZhengCode_email_error">
+						<span class="sanj"></span><span id="yanZhengCode_email_error_content">请按右图输入验证码，不区分大小写</span>
+						</div>
+						<div class="c_img"><a>验证码</a></div>
+						<div class="c_ts"><a href="#">看不清？<br>换一张</a></div>
+					</div>
+<!-- 一次密码 -->
+					<div class="cell">
+						<label class="" for="passWord" id="passWord_moren">请输入密码</label>
+						<input type="password" id="passWord" class="text error" />
+						<span class="ok" id="passWord_ok" style="display:none"></span>
+						<div class="cell_hid" id="passWord_error" style="display: none;">
+						<span class="sanj"></span><span id="passWord_error_content">密码长度只能在6-20位字符之间</span>
+						</div>
+					</div>
+<!-- 二次密码 -->
+					<div class="cell">
+						<label class="" for="repeatPassWord" id="repeatPassWord_moren">请输入确认密码</label>
+						<input id="repeatPassWord" type="password" class="text error" />
+						<span class="ok" style="display:none" id="repeatPassWord_ok"></span>
+						<div class="cell_hid" style="display:none;" id="repeatPassWord_error">
+						<span class="sanj"></span><span id="repeatPassWord_error_content">两次输入密码不一致</span>
+						</div>
+					</div>
+<!-- 二次密码 -->
+
+                    <!-- 同意注册 -->
+                    <div class="r_load">
+					   <input id="r_load_btn" type="submit" class="r_load_btn" value="同意协议并注册" >
+				    </div>
+				    <!-- 同意注册 -->
+				    
+	    		</div>
+	    	</div>
+	    	<div class="clear"></div>
+	    </div>
+	<!-- 注册页面注册部分 -->
+
+	<div class="load_foot">
+		<p>
+		Copyright © 2016 中酒网(www.zhongjiu.cn) 版权所有
+		<a target="_blank" href="http://www.miibeian.gov.cn">京ICP备12022216号-2</a>
+		</p>
+		<p><i class="red">购买前请确认达到法定饮酒年龄！</i>中酒网不销售任何含酒精产品给18岁以下人士！</p>
+	</div>
+	<script src="../lib/jquery-1.12.3.js "></script>
+	<script src="../lib/jquery.cookie.js"></script>
+	<script src="../js/register.js"></script>
+	<script src="../js/jquery.idcode.js"></script>
+	
+    </body>
+</html>

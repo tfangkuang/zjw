@@ -1,0 +1,3 @@
+#nav-list h3:hover{background-color: #B81C22;}
+#nav-list >div:hover .icon-tri{display: block;}
+#main-nav #nav-list .div-none{display:none;height:60px;background-color: #313131;}

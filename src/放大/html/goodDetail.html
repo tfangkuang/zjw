@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css"  href="../css/index.css" >
+		<link rel="stylesheet" type="text/css" href="../css/car.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/basefd.css" />
+		<link rel="stylesheet" type="text/css" href="../css/goodDetail.css"/>
+		<!--<link rel="stylesheet" type="text/css"  href="css/slider.css" >-->
+		<script src="../js/jquery-1.12.0.js"></script>
+		<script src="../js/hover.js"></script> 
+	<!--	<script src="../js/Slider.js"></script>-->
+		
+
+		<script type="text/javascript" src="../js/jquery-1.4.2.min.js"></script>
+		<script type="text/javascript" src="../js/jquery.jqzoom.js"></script>
+		<script type="text/javascript" src="../js/base.js"></script>
+		
+		
+		
+		
+		
+	</head>
+	<body>
+		<!--<div id="top-lead" style="background:url(../images/banner/dt920.jpg) center top no-repeat">
+			<div class="box1-wrap" ><a  href="#" target="_blank"></a></div>
+		</div>
+		<!---->
+		
+		<div id="header">
+			<div  class="head">
+				<ul class="header-left">
+					<li>
+						<i></i> 
+						<a  href="index.html">中酒首页</a> 
+					</li>
+					<li>
+						<span class="tab-span">Hi,欢迎来中酒</span>
+					</li>
+					<li>
+						<a  href="login.html">请登录</a>
+					</li>
+					<li>
+						<a  href="register.html"><span>注册</span></a>
+					</li>
+				</ul>
+				<ul class="header-right">
+					
+					<li>
+						<span class="weixin">
+						<img src="../images/weixin.png" width="20" height="20" style="margin-top:6px">
+						<img class="tab-weixin" src="../images/weixin2.jpg"  width="150" height="150">
+						</span>
+					</li>
+					<li>
+						<span class="weibo">
+						<img src="../images/weibo.png"  width="30" height="30">
+						<img class="tab-weibo" src="../images/weibo2.png"  width="150" height="150">
+						</span>
+					</li>
+					<li>
+						<a href="##"><span>【重要公告】</span></a>
+					</li>
+					<li  class="icon-call">
+						<i></i>
+						<span>订购热线：400-798-9999</span> 
+					</li>
+					<li  class="icon-help">
+						<i></i>
+						<a href="##">帮助中心</a>
+					</li>
+					<li  class="icon-phone">
+						<i></i>
+						<a href="##">手机版</a>
+					</li>
+					<li  class="icon-my">
+						<i></i>
+						<a href="login.html">我的中酒</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div id="nav"> <!--搜索-->
+			
+				<div  class="nav-left">
+						<a href="#"  class="highlight"></a>
+					<div  class="nav-logo">
+						<a href="#" ><img src="../images/0926gif.gif"></a>
+					</div>
+				</div>
+				<div  class="nav-right">
+					<div class="search">
+						<div class="search-wrap">
+							<input type="text" value="" class="search-text">
+							<input type="submit" value="搜&nbsp;&nbsp;索" class="search-sumbit">
+						</div>
+					</div>
+					<div class="search-hot">
+						<h3>热门搜索&nbsp;:&nbsp;</h3>
+						<a href="#">9.9元秒杀</a>
+						<a href="#">新人特权</a>
+						<a href="#">永不分离</a>
+						<a href="#">茅台</a>
+						<a href="#">西凤</a>
+						<a href="#">泸州老窖</a>
+					</div>
+				</div>
+				<div  class="nav-middle"></div>
+				<!---->
+				
+				<dl class="shopcar fr">
+					<dt>
+						<h3>
+							<i class="icon-car"></i>
+							<a title="" href="#" target="_blank">我的购物车</a>
+							<span class="icon-count">
+							<i id="countId">0</i>
+							</span>
+							<i class="arrow"></i>
+						</h3>
+					</dt>
+					<dd class="shopCartWrap dd">
+						<div class="con">
+							<h4 class="nothing">
+								<i></i>
+								购物车中还没有商品，赶紧选购吧！
+							</h4>
+						</div>
+					</dd>
+				</dl>
+				
+				
+				<!---->
+				
+		</div>
+		<div id="main-nav">  <!--导航-->
+
+			<div class="w">		
+				<!--左侧种类导航侧商品-->
+				<div  id="nav-list" class="category-nav">
+					<h2>全部商品分类</h2>
+					<!--<div class="div-none" style="display: none">
+						<h3>
+							<i class="bai"></i>
+							<a href="#">名优白酒</a>
+							<i class="icon-tri"></i>
+						</h3>
+						<div class="tab-none">
+							<dl class="tab-none-list">
+								<dt>品牌</dt>
+								<dd>
+									<ul>
+										<li><a href="#">茅台</a></li>
+										<li><a href="#">茅台</a></li>
+										<li><a href="#">茅台</a></li>
+										<li><a href="#">茅台</a></li>
+										<li><a href="#">茅台</a></li>
+										<li class="lastChild"><a href="#">茅台</a></li>
+									</ul>
+									<ul>
+										<li><a href="#">茅台</a></li>
+										<li><a href="#">茅台</a></li>
+										<li><a href="#">茅台</a></li>
+										<li><a href="#">茅台</a></li>
+										<li><a href="#">茅台</a></li>
+										<li class="lastChild"><a href="#">茅台</a></li>
+									</ul>
+									<ul>
+										<li><a href="#">茅台</a></li>
+										<li><a href="#">茅台</a></li>
+										<li><a href="#">茅台</a></li>
+										<li><a href="#">茅台</a></li>
+										
+									</ul>
+								</dd>
+								<dt>品种</dt>
+								<dd>
+									
+									<ul>
+										<li><a href="#">茅台</a></li>
+										<li><a href="#">茅台</a></li>
+										
+										<li><a href="#">茅台</a></li>
+										<li><a href="#">茅台</a></li>
+										<li><a href="#">茅台</a></li>
+										<li class="lastChild"><a href="#">茅台</a></li>
+									</ul>
+								</dd>
+								<dt>产地</dt>
+								<dd>
+									
+									<ul>
+										<li><a href="#">茅台</a></li>
+										<li><a href="#">茅台</a></li>
+										<li><a href="#">茅台</a></li>
+										<li><a href="#">茅台</a></li>
+										<li><a href="#">茅台</a></li>
+										<li><a href="#">茅台</a></li>
+										<li><a href="#">茅台</a></li>
+										<li class="lastChild"><a href="#">茅台</a></li>
+									</ul>
+								</dd>
+
+							</dl>
+						</div>
+					</div>
+					<div>
+						<h3>
+							<i class="hong"></i>
+							<a href="#">葡萄酒/红酒</a>
+							<i class="icon-tri"></i>
+						</h3>
+						<div class="tab-none">
+							<dl class="tab-none-list">
+								<dt>品牌</dt>
+								<dd>
+									<ul>
+										<li><a href="#">茅台</a></li>
+										<li><a href="#">茅台</a></li>
+										<li><a href="#">茅台</a></li>
+										<li><a href="#">茅台</a></li>
+										<li><a href="#">茅台</a></li>
+										<li class="lastChild"><a href="#">茅台</a></li>
+									</ul>
+									<ul>
+										<li><a href="#">茅台</a></li>
+										<li><a href="#">茅台</a></li>
+										<li><a href="#">茅台</a></li>
+										<li><a href="#">茅台</a></li>
+										<li><a href="#">茅台</a></li>
+										<li class="lastChild"><a href="#">茅台</a></li>
+									</ul>
+									<ul>
+										<li><a href="#">茅台</a></li>
+										<li><a href="#">茅台</a></li>
+										
+									</ul>
+								</dd>
+								<dt>品种</dt>
+								<dd>
+									
+									<ul>
+										<li><a href="#">茅台</a></li>
+										<li><a href="#">茅台</a></li>
+										
+										<li><a href="#">茅台</a></li>
+										<li><a href="#">茅台</a></li>
+										<li><a href="#">茅台</a></li>
+										<li class="lastChild"><a href="#">茅台</a></li>
+									</ul>
+								</dd>
+								<dt>产地</dt>
+								<dd>
+									
+									<ul>
+										<li><a href="#">茅台</a></li>
+										<li><a href="#">茅台</a></li>
+										<li><a href="#">茅台</a></li>
+										<li><a href="#">茅台</a></li>
+										
+									</ul>
+								</dd>
+
+							</dl>
+						</div>
+						
+					</div>
+					<div>
+						<h3>
+							<i class="yang"></i>
+							<a href="#">洋酒</a>
+							<i  class="icon-tri"></i>
+						</h3>
+						<div class="tab-none">
+							<dl class="tab-none-list">
+								<dt>品牌</dt>
+								<dd>
+									<ul>
+										<li><a href="#">衡水老白干</a></li>
+										<li><a href="#">茅台</a></li>
+										<li><a href="#">衡水老白干</a></li>
+										<li><a href="#">茅台</a></li>
+										<li><a href="#">茅台</a></li>
+										<li><a href="#">茅台</a></li>
+									</ul>
+									<ul>
+										<li><a href="#">茅台</a></li>
+										<li><a href="#">茅台</a></li>
+										<li><a href="#">衡水老白干</a></li>
+										<li><a href="#">茅台</a></li>
+										<li><a href="#">茅台</a></li>
+										<li class="lastChild"><a href="#">茅台</a></li>
+										
+									</ul>
+									<ul>
+										
+										<li><a href="#">茅台</a></li>
+										<li><a href="#">茅台</a></li>
+										
+									</ul>
+								</dd>
+								<dt>品种</dt>
+								<dd>
+									
+									<ul>
+										
+										
+										<li><a href="#">茅台</a></li>
+										<li><a href="#">茅台</a></li>
+										<li><a href="#">茅台</a></li>
+										<li class="lastChild"><a href="#">茅台</a></li>
+									</ul>
+								</dd>
+								<dt>产地</dt>
+								<dd>
+									
+									<ul>
+										<li><a href="#">茅台</a></li>
+										<li><a href="#">衡水老白干</a></li>
+										<li><a href="#">茅台</a></li>
+										<li><a href="#">茅台</a></li>
+										<li><a href="#">茅台</a></li>
+										<li class="lastChild"><a href="#">茅台</a></li>
+									</ul>
+								</dd>
+
+							</dl>
+						</div>
+					</div>
+					<div>
+						<h3>
+							<i class="huang"></i>
+							<a href="#">黄酒</a>
+							<i  class="icon-tri"></i>
+						</h3>
+						<div class="tab-none">
+							<dl class="tab-none-list">
+								<dt>品牌</dt>
+								<dd>
+									<ul>
+										<li><a href="#">茅台</a></li>
+										<li><a href="#">茅台</a></li>
+										<li><a href="#">茅台</a></li>
+										<li><a href="#">茅台</a></li>
+										<li><a href="#">茅台</a></li>
+										<li class="lastChild"><a href="#">茅台</a></li>
+									</ul>
+									<ul>
+										<li><a href="#">茅台</a></li>
+										<li><a href="#">茅台</a></li>
+										<li><a href="#">茅台</a></li>
+										<li><a href="#">茅台</a></li>
+										<li><a href="#">茅台</a></li>
+										<li class="lastChild"><a href="#">茅台</a></li>
+									</ul>
+									<ul>
+										<li><a href="#">茅台</a></li>
+										<li><a href="#">茅台</a></li>
+										<li><a href="#">茅台</a></li>
+										<li><a href="#">茅台</a></li>
+										<li><a href="#">茅台</a></li>
+										<li class="lastChild"><a href="#">茅台</a></li>
+									</ul>
+								</dd>
+								<dt>品种</dt>
+								<dd>
+									
+									<ul>
+										<li><a href="#">茅台</a></li>
+										<li><a href="#">茅台</a></li>
+										
+										<li><a href="#">茅台</a></li>
+										<li><a href="#">茅台</a></li>
+										<li><a href="#">茅台</a></li>
+										<li class="lastChild"><a href="#">茅台</a></li>
+									</ul>
+								</dd>
+								<dt>价格</dt>
+								<dd>
+									
+									<ul>
+										<li><a href="#">1-99</a></li>
+										<li><a href="#">100-199</a></li>
+										<li><a href="#">200-299</a></li>
+									</ul>
+								</dd>
+
+							</dl>
+						</div>
+					</div>
+					<div>
+						<h3>
+							<i class="lipin"></i>
+							<a href="#">礼品专区</a>
+							<i  class="icon-tri"></i>
+						</h3>
+						<div class="tab-none">
+							<dl class="tab-none-list">
+								<dt>品牌</dt>
+								<dd>
+									<ul>
+										<li><a href="#">茅台</a></li>
+										<li><a href="#">茅台</a></li>
+										<li><a href="#">茅台</a></li>
+										<li><a href="#">茅台</a></li>
+										<li><a href="#">茅台</a></li>
+										<li class="lastChild"><a href="#">茅台</a></li>
+									</ul>
+									
+								</dd>
+								<dt>品种</dt>
+								<dd>
+									
+									<ul>
+										<li><a href="#">茅台</a></li>
+										<li><a href="#">茅台</a></li>
+										
+										<li><a href="#">茅台</a></li>
+										<li><a href="#">茅台</a></li>
+										<li><a href="#">茅台</a></li>
+										<li class="lastChild"><a href="#">茅台</a></li>
+									</ul>
+								</dd>
+								<dt>产地</dt>
+								<dd>
+									
+									<ul>
+										<li><a href="#">贵州</a></li>
+										<li><a href="#">四川</a></li>
+										<li><a href="#">法国</a></li>
+										<li><a href="#">陕西</a></li>
+										<li><a href="#">南非</a></li>
+										
+									</ul>
+								</dd>
+
+							</dl>
+						</div>
+					</div>
+					<div>
+						<h3>
+							<i class="hun"></i>
+							<a href="#">婚庆专用</a>
+							<i  class="icon-tri"></i>
+						</h3>
+						<div class="tab-none">
+							<dl class="tab-none-list">
+								<dt>品牌</dt>
+								<dd>
+									<ul>
+										<li><a href="#">茅台</a></li>
+										<li><a href="#">茅台</a></li>
+										<li><a href="#">茅台</a></li>
+										<li><a href="#">茅台</a></li>
+										<li><a href="#">茅台</a></li>
+										<li class="lastChild"><a href="#">茅台</a></li>
+									</ul>
+									<ul>
+										<li><a href="#">茅台</a></li>
+										
+										<li><a href="#">茅台</a></li>
+										<li class="lastChild"><a href="#">茅台</a></li>
+									</ul>
+									
+								</dd>
+								<dt>品种</dt>
+								<dd>
+									
+									<ul>
+										<li><a href="#">茅台</a></li>
+										<li><a href="#">茅台</a></li>
+										
+										<li><a href="#">茅台</a></li>
+										<li><a href="#">茅台</a></li>
+										<li><a href="#">茅台</a></li>
+										<li class="lastChild"><a href="#">茅台</a></li>
+									</ul>
+								</dd>
+								<dt>产地</dt>
+								<dd>
+									
+									<ul>
+										<li><a href="#">四川</a></li>
+										<li><a href="#">贵州</a></li>
+										<li><a href="#">杭州</a></li>
+										
+										<li class="lastChild"><a href="#">茅台</a></li>
+									</ul>
+								</dd>
+
+							</dl>
+						</div>
+					</div>-->
+					
+					
+				</div>
+				
+				<!--页头导航-->
+				<ul class="main-nav-list">
+					<li><a href="#">好烦</a></li>
+					<li><a href="#">好烦</a></li>
+					<li><a href="#">好烦好烦</a></li>
+					<li><a href="#">好烦好烦</a></li>
+					<li><a href="#">好烦好烦</a></li>
+					<li><a href="#">好烦好烦</a></li>
+					<li><a href="#">好烦好烦</a></li>
+					<li><a href="#">好烦好烦</a></li>
+					<li><a href="#">好烦好烦</a><i class="hot"></i></li>					
+				</ul>
+			</div>
+			
+		</div>
+		
+		<div id="index-list">
+					<a>首页</a>
+					>
+					<a>洋酒</a>
+					>
+					<a>绝对伏特加</a>
+					>
+					<span>绝对伏特加 原创750ml</span>
+		</div>
+		
+		
+		
+		<div class="jiage-list"><img src="../images/jiage_03.gif"></div>
+		<div style="margin-top:5px;"><img class="img-list" src="../images/2016_03.gif"></div>
+		<!--*******************************************-->
+		<div class="add-car">
+			
+			<div id='side-service'>
+				<ul class='t'>
+					<li class='sc' data-ind='1' id='OpenShopCar' ><a href='javascript:void(0)'>购物车</a><i></i></li>
+					<li class='cl' data-ind='2' onclick='javascript:ShouCang.GetShouCangList();'><a href='javascript:void(0);'>收藏</a><i></i></li>
+					<li class='cp' data-ind='3' onclick='javascript:Coupon.GetCouponList();'><a href='javascript:void(0)'>优惠券</a><i></i></li>
+					<li class='ed' id='back-to-top'><a href='javascript:void(0)'>顶部</a><i></i></li>
+				</ul>
+				<div class='c'>
+					<!--购物车 s-->
+					<div class='item sc-c' data-ind='1'>
+						<div class='item-con'>
+							<h3>
+								<i></i>
+								<span>购物车</span>
+								<a href='javascript:void(0)' class='op-close'></a>
+								
+							</h3>
+							<div class='no' id='cartlistno'>
+								</div>
+								<div class='yes' id='cartlist'>
+							</div>
+							<!--登陆后 s-->
+								<div class='foot' id='total'>
+								</div>
+						</div>
+					</div>
+						<!--购物车 e-->
+						<!--收藏 s-->
+					<div class='item cl-c' data-ind='2'>
+					</div>
+						<!--收藏 e-->
+						<!--优惠券 s-->
+					<div class='item cp-c' data-ind='3' >
+					</div>
+						<!--优惠券 e-->
+				</div>
+			</div>
+		</div>
+		
+		
+		<div class="buy">
+			<div class="num">
+				<input type="text" value="1">
+				<a class="add">+</a>
+				<a class="min">-</a>
+			</div>
+			<div>
+				<a href="##"><img class="buy-list" src="../images/buy1.gif"></a>
+			<a href="##"><img  class="buy-car" src="../images/buy2.gif"></a>
+			</div>
+			
+				
+		</div>
+		
+		
+		
+		<!--放大镜-->	
+			<div class="right-extra" style="margin:5px 40px;">
+			<!--产品参数开始-->
+			<div style="width:100%;border-top:1px solid #DFDFDF;">
+				<div id="preview" class="spec-preview">
+					<span class="jqzoom">
+						<img jqimg="../images/b1.jpg" src="../images/b1.jpg" />
+					</span> 
+					
+				</div>
+				
+				<!--缩图开始-->
+				<div class="spec-scroll"> <a class="prev">&lt;</a> <a class="next">&gt;</a>
+					<div class="items">
+						<ul>
+                            <li><img alt="好酒" bimg="../images/b1.jpg" src="../images/b1.jpg" onmousemove="preview(this);"></li>
+                            <li><img alt="好酒" bimg="../images/b2.jpg" src="../images/b2.jpg" onmousemove="preview(this);"></li>
+                            <li><img alt="好酒" bimg="../images/b3.jpg" src="../images/b3.jpg" onmousemove="preview(this);"></li>
+                            <li><img alt="好酒" bimg="../images/b4.jpg" src="../images/b4.jpg" onmousemove="preview(this);"></li>
+                            <li><img alt="好酒" bimg="../images/b1.jpg" src="../images/b1.jpg" onmousemove="preview(this);"></li>
+                            <li><img alt="好酒" bimg="../images/b2.jpg" src="../images/b2.jpg" onmousemove="preview(this);"></li>
+                            <li><img alt="好酒" bimg="../images/b3.jpg" src="../images/b3.jpg" onmousemove="preview(this);"></li>
+                            <li><img alt="好酒" bimg="../images/b4.jpg" src="../images/b4.jpg" onmousemove="preview(this);"></li>
+                            
+                          
+                        </ul>
+					</div>
+					
+				</div>
+				
+				<!--缩图结束-->
+				
+			</div>
+			
+		</div>
+		<div class="goodsId">
+			<img src="../images/goos-list.gif">
+		</div>
+		<div class="goodsId-2"><img src="../images/2016-02.gif" ></div>
+		
+	</body>		
+	
+		
+</html> 
+    

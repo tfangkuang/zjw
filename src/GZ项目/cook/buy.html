@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="js/jquery-1.12.3.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.cookie.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var goods = JSON.parse($.cookie('carts'));
+			for (i in goods) {
+				$("<div>品名：<span>"+goods[i].name+"<span>,价格："+goods[i].price + "</span>" + "<span>,数量:"+goods[i].num+"</span></div>").appendTo($('body'));
+			}
+		</script>
+	</body>
+</html>
